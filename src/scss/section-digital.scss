@@ -1,0 +1,20 @@
+@use "variables" as v;
+.digital {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0 70px;
+  &__name {
+    max-width: 1720px;
+    font-family: v.$font4;
+    font-weight: 400;
+    font-size: 150px;
+    text-transform: uppercase;
+    text-align: center;
+    &--design {
+      font-family: v.$second-family;
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+  }
+}
