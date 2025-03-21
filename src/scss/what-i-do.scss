@@ -1,0 +1,116 @@
+@use "variables" as *;
+
+.what-i-do {
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #252525;
+
+    @media screen and (max-width: $ui-breakpoint-lg) {
+      display: block;
+    }
+  }
+
+  &__left-menu {
+    background-image: url(../images/what-i-do-bgd.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    @media screen and (max-width: $ui-breakpoint-lg) {
+      width: 100%;
+      height: 991px;
+    }
+
+    @media screen and (max-width: $ui-breakpoint-md) {
+      width: 100%;
+      height: 478px;
+    }
+  }
+
+  & h2 {
+    font-family: $ui-main-font;
+    font-weight: 300;
+    font-size: 150px;
+    text-transform: uppercase;
+    color: #252525;
+    margin-bottom: 100px;
+    text-align: center;
+
+    @media screen and (max-width: $ui-breakpoint-lg) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: $ui-breakpoint-md) {
+      font-size: 80px;
+    }
+  }
+
+  &__right-menu {
+    padding: 70px 70px 70px 111px;
+
+    @media screen and (max-width: $ui-breakpoint-lg) {
+      padding: 40px 30px;
+    }
+
+    @media screen and (max-width: $ui-breakpoint-md) {
+      padding: 20px;
+    }
+  }
+
+  &__list {
+    counter-reset: my-awesome-counter;
+
+    & h3 {
+      counter-increment: my-awesome-counter;
+
+      &::before {
+        content: "0" counter(my-awesome-counter) " ";
+        font-family: $ui-main-font;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 109%;
+        text-transform: uppercase;
+        color: #000;
+
+        @media screen and (max-width: $ui-breakpoint-md) {
+          font-size: 35px;
+        }
+      }
+    }
+
+    & hr {
+      border: 1px solid #252525;
+      width: 100%;
+      height: 0px;
+      margin: 40px 0;
+
+      @media screen and (max-width: $ui-breakpoint-md) {
+        margin: 30px 0;
+      }
+    }
+
+    & h3 {
+      font-family: $ui-main-font;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 109%;
+      text-transform: uppercase;
+      color: #000;
+
+      @media screen and (max-width: $ui-breakpoint-md) {
+        font-size: 35px;
+      }
+    }
+
+    & p {
+      font-family: $ui-secondary-font;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      color: #000;
+    }
+  }
+}

@@ -1,8 +1,23 @@
 $font-family: "Inter", sans-serif;
-$second-family:"Gilroy", sans-serif;
-$third-family:"Gilroy-Medium", sans-serif;
+$second-family: "Gilroy", sans-serif;
+$third-family: "Gilroy-Medium", sans-serif;
 $font3: "Gilroy-Bold", sans-serif;
 $font4: "Gilroy-SemiBold", sans-serif;
 $font5: "Gilroy-Regular", sans-serif;
-$background-color:  #f5f3ea;
+$background-color: #f5f3ea;
 $color-black: #000;
+
+$ui-main-font: "Gilroy";
+$ui-secondary-font: "Inter", sans-serif;
+
+$ui-breakpoint-sm: "576px";
+$ui-breakpoint-sm--min: "577px";
+
+$ui-breakpoint-md: "768px";
+$ui-breakpoint-md--min: "769px";
+
+$ui-breakpoint-lg: "992px";
+$ui-breakpoint-lg--min: "993px";
+
+$ui-breakpoint-xl: "1200px";
+$ui-breakpoint-xl--min: "1201px";
