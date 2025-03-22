@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="container header">
       <a class="header__logo" href="#">
         <img src="./images/header.svg" alt="#" />
         <h1 class="header__title">
@@ -18,28 +18,32 @@
       <a class="header__menu" href="#">MENU</a>
     </header>
     <main>
-      <section class="digital">
-        <h2 class="digital__name">
-          Dianne Russell
+      <section class="digital ">
+        <h2 class="digital__name container ">
+          Dianne Russell<br>
           <span class="digital__name--design">Digital Design</span>
         </h2>
-        <img class="digital__arrow" src="./images/arrow-down.svg" alt="#" />
+        <img
+          class="digital__arrow container"
+          src="./images/arrow-down.svg"
+          alt="#"
+        />
         <img class="digital__banner" src="./images/hero.svg" alt="#" />
         <div class="digital__about">
-          <p>
+          <p class="digital__about--text">
             From art to technology, we transform visions into extraordinary
-            digital experiences - your design, our passion, an exceptional
+            <span class="digital__about--text-in">digital experiences</span> - your design, our passion, an exceptional
             future
           </p>
-          <p class="digital__links">
-            ABOUT ME
+          <div class="digital__links">
+            <p class="digital__links--txt">ABOUT ME</p>
             <a class="digital__links--holder" href="#">
               <img src="./images/facebook.svg" alt="#" />
               <img src="./images/twitter.svg" alt="#" />
               <img src="./images/linkedin.svg" alt="#" />
               <img src="./images/dribble.svg" alt="#" />
             </a>
-          </p>
+          </div>
         </div>
       </section>
       <section class="what-i-do">

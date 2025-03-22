@@ -1,20 +1,62 @@
 @use "variables" as v;
 .digital {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__name {
-    max-width: 1720px;
     font-family: v.$font4;
     font-weight: 400;
     font-size: 150px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
     &--design {
       font-family: v.$second-family;
       font-weight: 300;
       text-transform: capitalize;
+    }
+  }
+  &__arrow {
+    margin-bottom: 40px;
+  }
+  &__about {
+    height: 404px;
+    display: flex;
+    align-items: center;
+    &--text {
+      height: 232px;
+      padding-left: 70px;
+      margin-right: 70px;
+      max-width: 1295px;
+      font-family: v.$second-family;
+      font-weight: 300;
+      font-size: 62px;
+      &-in {
+        font-weight: 800;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
+    padding: 0px 70px;
+    width: 485px;
+    height: 232px;
+    background-color: v.$color-black;
+    &--txt {
+      font-family: v.$third-family;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 100%;
+      color: v.$background-color;
+      text-align: right;
+    }
+    &--holder {
+      display: flex;
+      gap: 20px;
     }
   }
 }
