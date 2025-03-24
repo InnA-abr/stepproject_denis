@@ -1,0 +1,25 @@
+@use "variables" as v;
+.logos {
+  background-color: v.$background-color;
+  padding: 70px 0;
+  border-top: 1px solid #252525;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: v.$ui-breakpoint-lg) {
+    padding: 40px 10px;
+    
+    height: 100%;
+    gap: 20px;
+    flex-shrink: 0;
+  }
+  img {
+    padding: 18px 40px;
+    background-color: white;
+    border-radius: 50px;
+    @media screen and (max-width: v.$ui-breakpoint-lg) {
+    }
+  }
+}
