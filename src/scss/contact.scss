@@ -1,0 +1,99 @@
+@use "variables" as *;
+
+.contact {
+  &__content {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: $ui-breakpoint-lg) {
+      padding-bottom: 30px;
+      padding-top: 0;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-family: $ui-main-font;
+    font-weight: 300;
+    font-size: 155px;
+    text-transform: uppercase;
+    color: #333;
+
+    @media screen and (max-width: $ui-breakpoint-lg) {
+      margin-bottom: 40px;
+      font-size: 150px;
+    }
+
+    @media screen and (max-width: $ui-breakpoint-md) {
+      margin-bottom: 30px;
+      font-size: 80px;
+    }
+  }
+
+  & h4 {
+    font-family: $ui-main-font;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: #252525;
+
+    @media screen and (max-width: $ui-breakpoint-md) {
+      font-size: 50px;
+    }
+  }
+
+  & p {
+    font-family: $ui-main-font;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2em;
+    color: #252525;
+
+    @media screen and (max-width: $ui-breakpoint-md) {
+      font-size: 30px;
+    }
+  }
+
+  &__btn {
+    border-radius: 50px;
+    padding: 15px 30px;
+    width: 200px;
+    background: #252525;
+    font-family: $ui-main-font;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fff;
+    border: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    cursor: pointer;
+
+    @media screen and (max-width: $ui-breakpoint-lg) {
+      text-align: center;
+      height: 53px;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: $ui-breakpoint-md) {
+      width: 100%;
+    }
+
+    &::after {
+      content: url("../img/arrow.svg");
+      height: 18px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
