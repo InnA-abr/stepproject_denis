@@ -1,0 +1,123 @@
+@use "variables" as v;
+.selected-work {
+  margin-bottom: 110px;
+  background-color: v.$background-color;
+  border-top: 1px solid #252525;
+  @media screen and (max-width: v.$ui-breakpoint-lg) {
+    margin-bottom: 30px;
+  }
+  &__title {
+    padding-top: 70px;
+    font-family: v.$second-family;
+    font-weight: 300;
+    font-size: 192px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #252525;
+    margin-bottom: 50px;
+    @media screen and (max-width: v.$ui-breakpoint-lg) {
+      font-size: 150px;
+      margin-bottom: 0;
+      padding: 30px 0px;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 567px;
+    gap: 70px 40px;
+    margin-bottom: 70px;
+    @media screen and (max-width: v.$ui-breakpoint-lg) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    &--title {
+      font-family: v.$font3;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 110%;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 30px;
+    }
+    &--item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: v.$ui-breakpoint-lg) {
+        min-height: 209px;
+      }
+    }
+    &--trinity {
+      @media screen and (max-width: v.$ui-breakpoint-lg) {
+        order: 2;
+      }
+    }
+    &--text {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: v.$ui-breakpoint-lg) {
+        height: 219px;
+      }
+    }
+    &--white-box {
+      display: flex;
+      gap: 30px;
+    }
+    &--title {
+      font-family: v.$font3;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 110%;
+      text-transform: uppercase;
+      color: v.$color-black;
+    }
+    &--about {
+      max-height: max-content;
+      padding: 15px 30px;
+      border-radius: 50px;
+      background-color: v.$color-white;
+      font-family: v.$third-family;
+      font-weight: 400;
+      font-size: 18px;
+    }
+    &--discover {
+      align-self: flex-end;
+      display: flex;
+      gap: 10px;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-family: v.$third-family;
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: #fff;
+      background-color: v.$color-black;
+    }
+    &--img {
+      width: 100%;
+      height: 100%;
+      @media screen and (max-width: v.$ui-breakpoint-lg) {
+        max-height: 921px;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    &--in {
+      text-decoration: none;
+      border-radius: 50px;
+      padding: 15px 60px;
+      background-color: v.$color-white;
+      font-family: v.$third-family;
+      font-weight: 400;
+      font-size: 18px;
+      color: v.$color-black;
+    }
+  }
+}
