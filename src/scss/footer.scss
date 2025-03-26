@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+.footer {
+  border-top: 1px solid #252525;
+  padding: 25px 40px;
+
+  @media screen and (max-width: $ui-breakpoint-lg) {
+    padding: 20px 0;
+  }
+
+  &__info {
+    font-family: $ui-main-font;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+  }
+
+  & span {
+    font-weight: 600;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $ui-breakpoint-lg) {
+      padding: 25px 0;
+    }
+
+    @media screen and (max-width: $ui-breakpoint-md) {
+      padding: 4px 0;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 10px;
+  }
+}
