@@ -2,12 +2,15 @@
 .logos {
   background-color: v.$background-color;
   padding: 70px 0;
-  border-top: 1px solid #252525;
+
   display: flex;
   gap: 40px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  &__border-top {
+    border-top: 1px solid #252525;
+  }
   @media screen and (max-width: v.$ui-breakpoint-lg) {
     padding: 40px 10px;
     
