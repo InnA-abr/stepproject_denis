@@ -5,6 +5,10 @@
   align-items: center;
   &__banner {
     width: 100%;
+    object-fit: cover;
+    @media screen and (max-width: v.$ui-breakpoint-md) {
+      height: 638px;
+    }
   }
 
   &__name {
@@ -17,11 +21,14 @@
     @media screen and (max-width: v.$ui-breakpoint-lg) {
       font-size: 100px;
     }
-  }
-  &--design {
-    font-family: v.$second-family;
-    font-weight: 300;
-    text-transform: capitalize;
+    @media screen and (max-width: v.$ui-breakpoint-md) {
+      font-size: 52px;
+    }
+    &--design {
+      font-family: v.$second-family;
+      font-weight: 300;
+      text-transform: capitalize;
+    }
   }
 
   &__arrow {
@@ -52,8 +59,14 @@
         padding: 30px 30px;
         margin: 0;
       }
+      @media screen and (max-width:v.$ui-breakpoint-md) {
+        font-size: 30px;
+      }
       &-in {
         font-weight: 800;
+        @media screen and (max-width: v.$ui-breakpoint-md) {
+          font-weight: 700;
+        }
       }
     }
   }

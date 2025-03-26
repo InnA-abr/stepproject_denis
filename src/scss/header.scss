@@ -17,6 +17,10 @@
     font-size: 35px;
     letter-spacing: -0.02em;
     color: v.$color-black;
+    @media screen and (max-width: v.$ui-breakpoint-md) {
+      display: none;
+      
+    }
     &--studio {
       font-family: v.$third-family;
       font-weight: 400;
